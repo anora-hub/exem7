@@ -101,11 +101,11 @@ const Footer = () => {
                   >
                       <p>Shop.co © 2000-2023, All Rights Reserved</p>
                       <div class="flex gap-3">
-                          <img src="./public/ rasm22.png" alt="" />
-                          <img src="./public/ rasm23.png" alt="" />
-                          <img src=".public/ rasm24.png" alt="" />
-                          <img src=".public/rasm25.png" alt="" />
-                          <img src=".public/rasm26.png" alt="" />
+                          <img src=".rasm22.png" alt="" />
+                          <img src=" rasm23.png" alt="" />
+                          <img src="/ rasm24.png" alt="" />
+                          <img src="/rasm25.png" alt="" />
+                          <img src="rasm26.png" alt="" />
                       </div>
                   </div>
               </footer>

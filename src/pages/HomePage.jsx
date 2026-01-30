@@ -64,12 +64,12 @@ const HomePage = () => {
                                         <h3 class="text-[35px] font-bold">200+</h3>
                                         <p class="text-sm text-gray-500">International Brands</p>
                                     </div>
-                                    <img src="./public/rasm3.png" alt="" />
+                                    <img src="rasm3.png" alt="" />
                                     <div>
                                         <h3 class="text-[35px] font-bold">2,000+</h3>
                                         <p class="text-sm text-gray-500">High-Quality Products</p>
                                     </div>
-                                    <img src="./public/rasm3.png" alt="" />
+                                    <img src="rasm3.png" alt="" />
                                     <div>
                                         <h3 class="text-[35px] font-bold">30,000+</h3>
                                         <p class="text-sm text-gray-500">Happy Customers</p>
@@ -80,7 +80,7 @@ const HomePage = () => {
 
                             <div class="relative flex justify-center lg:justify-end">
 
-                                <img className='w-[600px] h-[700px]' src="./public/rasm3.jpg" alt="" />
+                                <img className='w-[600px] h-[700px]' src="rasm3.jpg" alt="" />
 
                                 <span class="absolute top-10 right-10 text-9xl">✦</span>
                                 <span class="absolute bottom-16 left-10 text-7xl">✦</span>
@@ -95,11 +95,11 @@ const HomePage = () => {
            grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5
            gap-6 justify-between"
                         >
-                            <img src="./public/rasm4.png" alt="Versace" class="h-6 sm:h-7 md:h-8 object-contain" />
-                            <img src="./public/rasm5.png" alt="Zara" class="h-6 sm:h-7 md:h-8 object-contain" />
-                            <img src="./public/rasm6.png" alt="Gucci" class="h-6 sm:h-7 md:h-8 object-contain" />
-                            <img src="./public/rasm7.png" alt="Prada" class="h-6 sm:h-7 md:h-8 object-contain" />
-                            <img src="./public/rasm8.png" alt="Calvin Klein" class="h-6 sm:h-7 md:h-8 object-contain" />
+                            <img src="rasm4.png" alt="Versace" class="h-6 sm:h-7 md:h-8 object-contain" />
+                            <img src="rasm5.png" alt="Zara" class="h-6 sm:h-7 md:h-8 object-contain" />
+                            <img src="rasm6.png" alt="Gucci" class="h-6 sm:h-7 md:h-8 object-contain" />
+                            <img src="rasm7.png" alt="Prada" class="h-6 sm:h-7 md:h-8 object-contain" />
+                            <img src="rasm8.png" alt="Calvin Klein" class="h-6 sm:h-7 md:h-8 object-contain" />
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ const HomePage = () => {
                         return (
                             <div>
                                 <div>
-                                    <img className='pt-14 ml-auto mr-auto block' src="./public/rasm9.png" alt="" />
+                                    <img className='pt-14 ml-auto mr-auto block' src="rasm9.png" alt="" />
                                 </div>
                                 <div class="mt-12 flex justify-center">
                                     <button class="px-8 py-3 border rounded-full hover:bg-black hover:text-white transition">
@@ -152,7 +152,7 @@ const HomePage = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
                             <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="./public/rasm10.png" alt="" className="w-full h-full object-cover" />
+                                <img src="rasm10.png" alt="" className="w-full h-full object-cover" />
 
                                 <span className="absolute top-4 left-4 text-3xl font-bold">
                                     Casual
@@ -161,7 +161,7 @@ const HomePage = () => {
 
 
                             <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="./public/rasm11.png" alt="" className="w-full h-full object-cover" />
+                                <img src="rasm11.png" alt="" className="w-full h-full object-cover" />
 
                                 <span className="absolute top-4 left-4 text-lg font-semibold">
 
@@ -170,7 +170,7 @@ const HomePage = () => {
 
 
                             <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="./public/rasm12.png" alt="" className="w-full h-full object-cover" />
+                                <img src="rasm12.png" alt="" className="w-full h-full object-cover" />
                                 <span className="absolute top-4 left-4 text-lg font-semibold">
 
                                 </span>
@@ -178,7 +178,7 @@ const HomePage = () => {
 
 
                             <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="./public/rasm13.png" alt="" className="w-full h-full object-cover" />
+                                <img src="rasm13.png" alt="" className="w-full h-full object-cover" />
                                 <span className="absolute top-4 left-4 text-3xl font-bold">
                                     Gym
                                 </span>
@@ -195,8 +195,8 @@ const HomePage = () => {
                         </h2>
 
                         <div class="flex gap-4 text-xl">
-                            <img src="./public/rasm16.png" alt="" />
-                            <img src="./public/rasm17.png" alt="" />
+                            <img src="rasm16.png" alt="" />
+                            <img src="rasm17.png" alt="" />
                         </div>
                     </div>
 
@@ -204,11 +204,11 @@ const HomePage = () => {
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                         <div class="border border-[1px] border-black/30 rounded-2xl p-6 bg-white">
-                            <img className='pb-3' src="./public/rasm14.png" alt="" />
+                            <img className='pb-3' src="rasm14.png" alt="" />
 
                             <div class="flex items-center gap-2 mb-4">
                                 <h4 class="font-semibold text-2xl">Sarah M.</h4>
-                                <img src="./public/rasm15.png" alt="" />
+                                <img src="rasm15.png" alt="" />
                             </div>
 
                             <p class="text-gray-600 text-[18px] leading-relaxed">
@@ -220,11 +220,11 @@ const HomePage = () => {
 
 
                         <div class="border border-[1px] border-black/30 rounded-2xl p-6 bg-white">
-                            <img className='pb-3' src="./public/rasm14.png" alt="" />
+                            <img className='pb-3' src="rasm14.png" alt="" />
 
                             <div class="flex items-center gap-2 mb-4">
                                 <h4 class="font-semibold text-2xl">Alex K.</h4>
-                                <img src="./public/rasm15.png" alt="" />
+                                <img src="rasm15.png" alt="" />
                             </div>
 
                             <p class="text-gray-600 text-[18px] leading-relaxed">
@@ -234,11 +234,11 @@ const HomePage = () => {
 
 
                         <div class="border border-[1px] border-black/30 rounded-2xl p-6 bg-white">
-                            <img className='pb-3' src="./public/rasm14.png" alt="" />
+                            <img className='pb-3' src="rasm14.png" alt="" />
 
                             <div class="flex items-center gap-2 mb-4">
                                 <h4 class="font-semibold text-2xl">James L.</h4>
-                                <img src="./public/rasm15.png" alt="" />
+                                <img src="rasm15.png" alt="" />
                             </div>
 
                             <p class="text-gray-600 text-[18px] leading-relaxed">

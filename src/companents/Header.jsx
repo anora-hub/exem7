@@ -63,10 +63,10 @@ const Header = () => {
 
 
                                 <Link>
-                                    <img src="./public/rasm1.png" alt="" />
+                                    <img src="rasm1.png" alt="" />
                                 </Link>
                                 <Link>
-                                    <img src="./public/rasm2.png" alt="" />
+                                    <img src="rasm2.png" alt="" />
                                 </Link>
 
 

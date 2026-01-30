@@ -46,10 +46,10 @@ const Footer = () => {
                           </p>
 
                           <div class="flex gap-4 justify-center sm:justify-start text-gray-600">
-                              <img src="./public/rasm18.png" alt="" />
-                              <img src="./public/rasm19.png" alt="" />
-                              <img src="./public/rasm20.png" alt="" />
-                              <img src="./public/rasm21.png" alt="" />
+                              <img src="rasm18.png" alt="" />
+                              <img src="rasm19.png" alt="" />
+                              <img src="rasm20.png" alt="" />
+                              <img src="rasm21.png" alt="" />
                           </div>
                       </div>
                       <div className=''>
@@ -101,10 +101,10 @@ const Footer = () => {
                   >
                       <p>Shop.co © 2000-2023, All Rights Reserved</p>
                       <div class="flex gap-3">
-                          <img src=".rasm22.png" alt="" />
+                          <img src="rasm22.png" alt="" />
                           <img src=" rasm23.png" alt="" />
-                          <img src="/ rasm24.png" alt="" />
-                          <img src="/rasm25.png" alt="" />
+                          <img src=" rasm24.png" alt="" />
+                          <img src="rasm25.png" alt="" />
                           <img src="rasm26.png" alt="" />
                       </div>
                   </div>

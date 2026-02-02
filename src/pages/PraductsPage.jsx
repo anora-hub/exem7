@@ -13,9 +13,9 @@ const {id} = useParams()
 const dispatch = useDispatch()
 const cart = useSelector((state => state.cart))
 
- const{data ,isLoading } = useGet({url:`products/${id}` , key:["product" , id] })
-
-
+  const { data, isLoading, isError } = useGet({ url: `products/${id}`, key: ["product", id] })
+  
+  
   const singleProducts = data?.data
 
   const discount = 20

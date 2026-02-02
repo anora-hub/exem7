@@ -5,24 +5,23 @@ import ProductsCart from '../companents/ProductsCart';
 
 const CategoryPage = () => {
   const { data, isLoading, error } = useGet({ url: "products", key: ["products"] });
-  const [selectedCategory, setSelectedCategory] = useState(null); // <-- tanlangan kategoriya
+  const [selectedCategory, setSelectedCategory] = useState(null)
+  
 
-  if (isLoading) return <p>Yuklanmoqda...</p>;
-  if (error) return <p>Ma’lumotni olishda xatolik yuz berdi.</p>;
+
 
   const products = Array.isArray(data) ? data : data?.data;
   const categories = products?.map(p => p.category) || [];
   const allCategories = [...new Set(categories)];
 
-  // Filterlangan mahsulotlar
+
   const filteredProducts = selectedCategory
     ? products.filter(p => p.category === selectedCategory)
-    : products; // agar kategoriya tanlanmagan bo‘lsa hamma mahsulot
+    : products; 
 
   return (
     <section className="container mx-auto mb-50 px-5 py-10 grid grid-cols-1 lg:grid-cols-5 gap-10">
 
-      {/* Sidebar */}
       <aside className="bg-gray-100 fixed  rounded-xl p-6 sticky top-10 max-w-[300px]">
         <h3 className="text-lg font-semibold mb-6">Filters</h3>
 
@@ -48,9 +47,9 @@ const CategoryPage = () => {
         </div>
       </aside>
 
-      {/* Mahsulotlar */}
+
       <main className="lg:col-span-4 bg-white rounded-xl ">
-        {/* Agar tanlangan kategoriya bo‘lsa sarlavha */}
+      
         <h2 className="text-3xl font-bold mb-6 text-center">
           {selectedCategory || "All Products"}
         </h2>

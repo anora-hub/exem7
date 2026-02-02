@@ -1,45 +1,37 @@
+// redux/slices/cartSlice.js
 import { createSlice } from "@reduxjs/toolkit"
 
-
-const initialState = {
-    cart:[]
+const cartInitialState = {
+    cart: []
 }
 
 export const cartSlice = createSlice({
-    name:"cart",
-    initialState,
-    reducers:{
-        addToCart:(state , action ) => {
-             state.cart.push({...action.payload , qty:1})
+    name: "cart",
+    initialState: cartInitialState,
+    reducers: {
+        addToCart: (state, action) => {
+            state.cart.push({ ...action.payload, qty: 1 })
         },
-        increase:(state , action)=> {
-            state.cart = state.cart?.map((el)=>{
-                if(el.id === action.payload){
-                    return {...el , qty:el.qty+1}
-                }else{
-                    return el
-                }
-            })
+        increase: (state, action) => {
+            state.cart = state.cart.map(el =>
+                el.id === action.payload ? { ...el, qty: el.qty + 1 } : el
+            )
         },
-
-        decrease:(state , action) => {
-            let item = state.cart.find((el)=> el.id === action.payload)
-            if(item.qty >1){
-                state.cart = state.cart.map((el) => {
-                    if(el.id === action.payload){
-                        return {...el , qty:el.qty-1}
-                    }else{
-                        return el
-                    }
-                })
-            }else{
-                state.cart = state.cart.filter((el)=> el.id !== action.payload)
+        decrease: (state, action) => {
+            const item = state.cart.find(el => el.id === action.payload)
+            if (item.qty > 1) {
+                state.cart = state.cart.map(el =>
+                    el.id === action.payload ? { ...el, qty: el.qty - 1 } : el
+                )
+            } else {
+                state.cart = state.cart.filter(el => el.id !== action.payload)
             }
         },
         removeFromCart: (state, action) => {
             state.cart = state.cart.filter(el => el.id !== action.payload)
-        }
-    }
+        },
+    },
 })
-export const { addToCart, increase , decrease  , removeFromCart}  = cartSlice.actions
+
+export const { addToCart, increase, decrease, removeFromCart } = cartSlice.actions
 export default cartSlice.reducer

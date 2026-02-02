@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import React from 'react'
+import React, { useState } from 'react'
 import ProductsCart from '../companents/ProductsCart';
 import useGet from '../hooks/useGet';
 import { Link } from 'react-router-dom';
@@ -17,17 +17,18 @@ const HomePage = () => {
 
     console.log(allCategories);
     console.log(data?.data);
+ 
    
 
     return (
         <>
             <main>
                 <section class=" bg-[#F2F0F1] overflow-hidden">
-                    <div class=" container mx-auto  px-5  ">
-                        <div class="grid lg:grid-cols-2 justify-between items-center">
+                    <div class=" container mx-auto   px-5  ">
+                        <div class="grid lg:grid-cols-2  mt-15 justify-between items-center">
 
 
-                            <div>
+                            <div  >
                                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
                                     <span class="relative inline-block">
                                         FIND CLOTHES

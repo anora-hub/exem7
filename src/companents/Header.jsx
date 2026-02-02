@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     const cart = useSelector((state) => state.cart)
+       const [search, setSearch] = useState("")
     return (
        <>
            <header className='fixed w-full z-40'>
@@ -42,6 +43,8 @@ const Header = () => {
 
                                 <div class="relative hidden md:block">
                                     <input
+                                        value={search}
+                                        onChange={(e) => setSearch(e.target.value)}
                                         type="text"
                                         placeholder="Search for products..."
                                         class="pl-14 pr-8 py-3 w-150 rounded-full bg-gray-100 text-sm

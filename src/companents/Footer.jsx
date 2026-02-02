@@ -8,7 +8,7 @@ const Footer = () => {
           <div class="bg-[#F5F5F5] pt-32 relative">
              
               <div class="absolute -top-24 left-0 w-full">
-                  <div class="max-w-7xl mx-auto px-4">
+                  <div class="container mx-auto px-4">
                       <div
                           class="bg-black rounded-2xl p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6 shadow-xl"
                       >
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
 
             
-              <footer class="container mx-auto px-5 pt-24 pb-10">
+              <footer class="container mx-auto px-5 pt-24 ">
                   <div class="grid grid-cols-1 gap-10 items-start
             sm:grid-cols-2 text-center sm:text-left        lg:grid-cols-5">
 

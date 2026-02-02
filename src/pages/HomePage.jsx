@@ -2,19 +2,13 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import React from 'react'
 import ProductsCart from '../companents/ProductsCart';
+import useGet from '../hooks/useGet';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-
-    const getProducts = async () => {
-        let res = axios.get(`https://fakestoreapi.com/products`)
-        return res
-
-    }
-
-    const { data, isLoading, error } = useQuery({
-        queryKey: ["products"],
-        queryFn: getProducts
-    })
+ 
+    const {data } = useGet({url:"products" , key:["products"]})
+   
     const products = data?.data
     const categories = products?.map((el) => {
         return el.category
@@ -110,13 +104,9 @@ const HomePage = () => {
                     {allCategories?.map((el) => {
                         return (
                             <div>
-                                <div>
-                                    <img className='pt-14 ml-auto mr-auto block' src="rasm9.png" alt="" />
-                                </div>
-                                <div class="mt-12 flex justify-center">
-                                    <button class="px-8 py-3 border rounded-full hover:bg-black hover:text-white transition">
-                                        View All
-                                    </button>
+                               
+                                <div class="mt-8 flex justify-center">
+                                   
                                 </div>
                                 <h2 class="text-center text-6xl font-extrabold mt-8 mb-10">{el} </h2>
                                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -129,16 +119,23 @@ const HomePage = () => {
                                     }
 
 
+                                  
 
 
 
 
                                 </div>
+                                  <div className="flex justify-center mt-6">
+                                    <Link to={"category"} className="px-8 py-3 border rounded-full hover:bg-black hover:text-white transition">
+                                            View All
+                                        </Link>
+                                    </div>
                             </div>
                         )
                     }
                     )
                     }
+
 
                 </section>
                 <section className=" py-10 bg-[#F0F0F0] ">
@@ -245,6 +242,7 @@ const HomePage = () => {
                                 "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
                             </p>
                         </div>
+                        
                     </div>
                 </section>
             </main>

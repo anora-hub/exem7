@@ -1,9 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
+    const cart = useSelector((state) => state.cart)
     return (
        <>
            <header className='fixed w-full z-40'>
@@ -20,8 +22,7 @@ const Header = () => {
 
                     <div className=' bg-[white]'>
                         <div class="container mx-auto px-5 mx-auto flex items-center justify-between  py-4">
-
-
+                            
                             <Link to={"/"} class="text-2xl font-extrabold">
                                 SHOP.CO
                             </Link>
@@ -62,10 +63,17 @@ const Header = () => {
 
 
 
-                                <Link>
-                                    <img src="rasm1.png" alt="" />
-                                </Link>
-                                <Link>
+                                <div className="relative inline-block">
+                                    <Link to={`/cart`}>
+                                        <img src="/rasm1.png" alt="" />
+                                    </Link>
+
+                                    <span className="absolute bottom-3 right-0 m-left-2 px-0.5 bg-black  text-white text-xs px-1  rounded-full">
+                                        {cart.length}
+                                    </span>
+                                </div>
+
+                                <Link to={"cart"}>
                                     <img src="rasm2.png" alt="" />
                                 </Link>
 

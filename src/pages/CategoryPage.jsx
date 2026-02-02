@@ -22,7 +22,7 @@ const CategoryPage = () => {
   return (
     <section className="container mx-auto mb-50 px-5 py-10 grid grid-cols-1 lg:grid-cols-5 gap-10">
 
-      <aside className="bg-gray-100 fixed  rounded-xl p-6 sticky top-10 max-w-[300px]">
+      <aside className="bg-gray-100 fixed  h-[400px] rounded-xl p-6 sticky top-30 max-w-[300px]">
         <h3 className="text-lg font-semibold mb-6">Filters</h3>
 
         <div>

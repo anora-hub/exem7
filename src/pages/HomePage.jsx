@@ -198,10 +198,7 @@ const HomePage = () => {
                             OUR HAPPY CUSTOMERS
                         </h2>
 
-                        <div className="flex gap-4 text-xl">
-                            <img src="rasm16.png" alt="" />
-                            <img src="rasm17.png" alt="" />
-                        </div>
+                       
                     </div>
 
 

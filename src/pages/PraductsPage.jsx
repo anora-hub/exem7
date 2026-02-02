@@ -9,9 +9,12 @@ import ProductsCart from '../companents/ProductsCart'
 
 const PraductsPage = () => {
 
+
+
 const {id} = useParams()
 const dispatch = useDispatch()
 const cart = useSelector((state => state.cart))
+
 
   const { data, isLoading, isError } = useGet({ url: `products/${id}`, key: ["product", id] })
   

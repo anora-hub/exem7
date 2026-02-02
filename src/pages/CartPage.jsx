@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrease, increase } from '../../app/cartSlice'
+import { decrease, increase, removeFromCart } from '../../app/cartSlice'
 import { Link } from 'react-router-dom'
 
 const CartPage = () => {
@@ -54,7 +54,12 @@ const CartPage = () => {
                       <h3 className="font-semibold text-[16px]">
                         {el.title}
                       </h3>
-                      <img src="/rasm29.png" alt="" className="w-5 h-5 cursor-pointer" />
+                      <img
+                        src="/rasm29.png"
+                        alt=""
+                        onClick={() => dispatch(removeFromCart(el.id))}
+                        className="w-5 h-5 cursor-pointer"
+                      />
                     </div>
 
                     <span className="text-xs bg-red-100 mt-2 w-[38px] text-red-500 px-2 py-0.5 rounded-full">

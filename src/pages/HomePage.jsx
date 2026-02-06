@@ -28,13 +28,13 @@ const HomePage = () => {
 
     return (
         <>
-            <main>
+            <main className="overflow-x-hidden">
                 <section className=" bg-[#F2F0F1] overflow-hidden">
                     <div className=" container mx-auto   px-5  ">
-                        <div className="grid lg:grid-cols-2  mt-15 justify-between items-center">
+                        <div className="grid lg:grid-cols-2 gap-10 items-center">
 
 
-                            <div  >
+                            <div className='mt-20' >
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
                                     <span className="relative inline-block">
                                         FIND CLOTHES
@@ -81,10 +81,10 @@ const HomePage = () => {
 
                             <div className="relative flex justify-center lg:justify-end">
 
-                                <img className='w-[600px] h-[700px]' src="rasm3.jpg" alt="" />
+                                <img className='w-full max-w-[600px] h-auto' src="rasm3.jpg" alt="" />
 
-                                <span className="absolute top-10 right-10 text-9xl">✦</span>
-                                <span className="absolute bottom-16 left-10 text-7xl">✦</span>
+                                <span className="hidden lg:block absolute top-10 right-10 text-9xl">✦</span>
+                                <span className="hidden lg:block absolute bottom-16 left-10 text-7xl">✦</span>
                             </div>
                         </div>
                     </div>
@@ -145,51 +145,69 @@ const HomePage = () => {
 
 
                 </section>
-                <section className=" py-10 bg-[#F0F0F0] ">
-                    {/* Title */}
-                    <div className='container mx-auto px-5'>
-                        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-                            BROWSE BY DRESS STYLE
-                        </h2>
+              <section>
+        <div className="container mx-auto px-5 max-w-[1440px] w-full bg-[#F0F0F0] rounded-2xl pb-20 my-[90px] ">
+          <h1 className="max-[900px]:text-[32px] max-[600px]:text-[24px] text-[40px]  font-bold uppercase text-center pt-10">
+            BROWSE BY DRESS STYLE
+          </h1>
 
+                        <div className="pt-10 lg:pt-20 px-2">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center">
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                {/* Casual */}
+                                <div className="relative bg-white rounded-xl shadow-md overflow-hidden w-full h-[300px] sm:h-[300px] flex items-center">
+                                    <div className="p-6 z-10">
+                                        <h3 className="text-[24px] sm:text-[32px] font-bold">Casual</h3>
+                                    </div>
+                                    <img
+                                        src="resm11.png"
+                                        alt="Casual"
+                                        className="absolute right-0 bottom-0 w-[45%] h-full object-cover"
+                                    />
+                                </div>
 
-                            <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="rasm10.png" alt="" className="w-full h-full object-cover" />
+                                {/* Formal */}
+                                <div className="relative bg-white rounded-xl shadow-md overflow-hidden w-full h-[300px] sm:h-[300px] flex items-center">
+                                    <div className="p-6 z-10">
+                                        <h3 className="text-[24px] sm:text-[32px] font-bold">Formal</h3>
+                                    </div>
+                                    <img
+                                        src="rasm11.png"
+                                        alt="Formal"
+                                        className="absolute right-0 bottom-0 w-[45%] h-full object-cover"
+                                    />
+                                </div>
 
-                                <span className="absolute top-4 left-4 text-3xl font-bold">
-                                    Casual
-                                </span>
-                            </div>
+                                {/* Party */}
+                                <div className="relative bg-white rounded-xl shadow-md overflow-hidden w-full h-[300px] sm:h-[300px] flex items-center">
+                                    <div className="p-6 z-10">
+                                        <h3 className="text-[24px] sm:text-[32px] font-bold">Party</h3>
+                                    </div>
+                                    <img
+                                        src="rasm12.png"
+                                        alt="Party"
+                                        className="absolute right-0 bottom-0 w-[45%] h-full object-cover"
+                                    />
+                                </div>
 
+                                {/* Gym */}
+                                <div className="relative bg-white rounded-xl shadow-md overflow-hidden w-full h-[300px] sm:h-[300px] flex items-center">
+                                    <div className="p-6 z-10">
+                                        <h3 className="text-[24px] sm:text-[32px] font-bold">Gym</h3>
+                                    </div>
+                                    <img
+                                        src="resm13.png"
+                                        alt="Gym"
+                                        className="absolute right-0 bottom-0 w-[45%] h-full object-cover"
+                                    />
+                                </div>
 
-                            <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="rasm11.png" alt="" className="w-full h-full object-cover" />
-
-                                <span className="absolute top-4 left-4 text-lg font-semibold">
-
-                                </span>
-                            </div>
-
-
-                            <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="rasm12.png" alt="" className="w-full h-full object-cover" />
-                                <span className="absolute top-4 left-4 text-lg font-semibold">
-
-                                </span>
-                            </div>
-
-
-                            <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-48 sm:h-56">
-                                <img src="rasm13.png" alt="" className="w-full h-full object-cover" />
-                                <span className="absolute top-4 left-4 text-3xl font-bold">
-                                    Gym
-                                </span>
                             </div>
                         </div>
-                    </div>
-                </section>
+
+
+        </div>
+      </section>
 
                 <section className=" container  mb-[110px] mx-auto px-5 py-12">
 
